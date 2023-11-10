@@ -1,0 +1,74 @@
+.bue-render .node-color.exec-branch {
+    background-color: var(--foreground)
+}
+
+.bue-render .node-color.exec-branch.gradient {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .1))
+}
+
+.bue-render .node-color.exec-sequence {
+    background-color: #E8AAAA
+}
+
+.bue-render .node-color.exec-sequence.gradient {
+    background: linear-gradient(90deg, hsla(0, 57%, 79%, .4) 0, hsla(0, 57%, 79%, .1))
+}
+
+.bue-render .node .header .icon.exec-branch:before {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA6UlEQVQoz2NgwArOtu5QxyqxX+1k5qPeh7P//f/1/krZOmEUyRU8dyb9RwEXW3qY4dJRnA/3/P//fN/hmCMmF8N+fX6weJ/lKlYk/Uf7/v8/3g9hZ3LvVEGzu0Pkz8+X5xoYsTpss90+u+P5//9vzcTuI4b/XyBO2uJErgKCViAc6cDEoMzgyODLEMoQxTCDoYbBn0EWxZs9pxlKGQIZrESsvCMY0oAKjRigYcnGYMCRseU17oBiYZBnCORev3EbnqAGAl2GOpOurpn7l59Y9+//l69z5xs7MqBGFwMjgyLEkbM3aK+AOBIARSWU16VenEYAAAAASUVORK5CYII=)
+}
+
+.bue-render .node.nvariableget.exec {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .3) 50%, hsla(0, 0%, 100%, 0))
+}
+
+.bue-render .node.nvariableset .round-bg-color.exec {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .3) 50%, hsla(0, 0%, 100%, 0))
+}
+
+.bue-render .node.narray .body .center-text .img-array.exec {
+    background-color: var(--foreground)
+}
+
+.bue-render .pin .div-inside:hover.exec {
+    background-color: hsla(0, 0%, 100%, .3)
+}
+
+.bue-render .pin .connector.exec {
+    border-color: var(--foreground)
+}
+
+.bue-render .pin .connector.exec:after {
+    border-left: 3px solid var(--foreground)
+}
+
+.bue-render .pin .connector.exec.filled {
+    background-color: var(--foreground)
+}
+
+.bue-render .pin .connector-image.exec {
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAQAAACIaFaMAAAAY0lEQVR42mNgwAX++/1/+x8C3v73Q5Z4ciqaQQoE//v9f4Ik9f8/RBgEzyf8/w+XQpYA64JJoUog6UKXgOvClIBIkSKBwyi4u4hyLpIwKEjOJ8B9gBIkHv+fQwPx+X8PBsIAAN/VbnUHQrhKAAAAAElFTkSuQmCC) no-repeat;
+    cursor: crosshair;
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+    width: 12px
+}
+
+.bue-render .pin .connector-image.exec.filled {
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAQAAACIaFaMAAAAVklEQVR42mNgwAVORM/8D4MnopEkZv5/duc/GDy7M/P/yVAkCWSAJIUqgSSFLgGXwpSASmGTAEmRJoHDKByW43Auigcf34YIPr6NEiQnQxGBiCSMGwAA6HX4M2XGYHEAAAAASUVORK5CYII=) no-repeat
+}
+
+.bue-render .pin .connector-set.exec {
+    color: var(--foreground)
+}
+
+.bue-render .pin .connector-array.exec {
+    background-color: var(--foreground)
+}
+
+.bue-render .pin .connector-map .key.exec, .bue-render .pin .connector-map .value.exec {
+    background-color: var(--foreground)
+}

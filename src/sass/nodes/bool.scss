@@ -1,0 +1,48 @@
+.bue-render .node.nvariableget.bool {
+    background: linear-gradient(90deg,
+            rgba(var(--color-bool-rgb), 0) 0,
+            rgba(var(--color-bool-rgb), .3) 50%,
+            rgba(var(--color-bool-rgb), 0)
+    )
+}
+
+.bue-render .node.nvariableset .round-bg-color.bool {
+    background: linear-gradient(90deg,
+            rgba(var(--color-bool-rgb), 0) 0,
+            rgba(var(--color-bool-rgb), .3) 50%,
+            rgba(var(--color-bool-rgb), 0)
+    )
+}
+
+.bue-render .node.narray .body .center-text .img-array.bool {
+    background-color: var(--color-bool)
+}
+
+.bue-render .pin .div-inside:hover.bool {
+    background-color: rgba(var(--color-bool-rgb), .3)
+}
+
+.bue-render .pin .connector.bool {
+    border-color: var(--color-bool)
+}
+
+.bue-render .pin .connector.bool:after {
+    border-left: 3px solid var(--color-bool)
+}
+
+.bue-render .pin .connector.bool.filled {
+    background-color: var(--color-bool)
+}
+
+.bue-render .pin .connector-set.bool {
+    color: var(--color-bool)
+}
+
+.bue-render .pin .connector-array.bool {
+    background-color: var(--color-bool)
+}
+
+.bue-render .pin .connector-map .key.bool, .bue-render .pin .connector-map .value.bool {
+    background-color: var(--color-bool)
+}
+
