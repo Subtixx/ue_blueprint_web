@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "checkJs": false,
+        "outDir": "dist",
+        "sourceMap": true,
+        "module": "commonjs",
+        "target": "es2017",
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "strict": false,
+        "moduleResolution": "node",
+        "importHelpers": false,
+        "lib": [
+            "es2015",
+            "dom",
+        ],
+    }
+}
