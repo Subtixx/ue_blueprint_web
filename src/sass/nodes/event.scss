@@ -1,0 +1,33 @@
+.bue-render .node-color.event {
+    background-color: var(--color-event);
+}
+
+.bue-render .node-color.event.gradient {
+    background: linear-gradient(90deg, rgba(var(--color-event-rgb), .4) 0, rgba(var(--color-event-rgb), .1));
+}
+
+.bue-render .node .header .icon.event:before {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAo0lEQVR4AXXBTUpCUQAG0M/2FDxoVpMoG9REooFZ1qgSBSFRl9DW3jpqDUEnnncg159zUnPlMsd515nlMBN8ecIq+0x1msQd1ql5U/STxC0+s2WGH61Wkw33WKXwoTNMxQjzJC4U4+ywwPlJflP0squXwkjnIRXPmKbwim+tVpMNAyyy5VHRTxJ9zFMz1jlN3GCZfV6wdO3POocZ6kxynMZZKv+91JsD8SUcfAAAAABJRU5ErkJggg==)
+}
+
+.bue-render .node .header .icon.event-custom:before {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA0UlEQVR4AXXBz0rCAADA4R/UA4UQDCoPihX9uXSJ6GCK61SJi8Ll9gi9WISHnqKuwWJB2y/WIBnq99HkkYes562ViNUcq88O1YRlTqwE4Jma0uSNtX0AT9QpC0bqh3Nfi8CgbIMXakLNOyt9gO8wS8ppvgUO1AfArrURFK08Acg2AYzVDrathVDs/UT880ntAA6sXAKUsWl2/9kCh+qEmtfqu3Nfvnpvux644bkas+CVf/IugD31kSZHVrbBU3XGMkN15rGlKavZtzJmPQN3aPgF+BS+KvXYCsQAAAAASUVORK5CYII=)
+}
+
+.bue-render .node .header.icon-client-event:after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAC1ElEQVR42u2VS2zMURjFf9P+RVvaMTVTiqqoJkhUZaaejUWVCmrahCZEvOMVyRDBxkI8YieKCGJnQ8NC7tAmY1ESjwUixKOdkqkEiWdDTKI6cyyGdmbazmwsfd/6/O653733XPjnZSOPqdTQwKpBu4EappKHrb88k2I2chWTtq+yniIykgH5bLP8jW2hsFJW54/Gl5afTdhjMosCZlJPHRsx50Md0UqRsiv1KnKqHUNZDFDAur/WLH9YlXKoSt6kXqjpKlRGL+JrBENtDODGXOuUpOMvXC2SXdVJ4uXyqEyOOA92SY5m1gJk4MW8/iV9Vl6bMyCNTJIv02S5lZmwCbskZ4BNALn4SgOSdLCHZmdAcibIl2i8ZvVaTwJsBijmzI4nUpccQUwyoFb5mq1h/cYYD/BgLn6QDkVo7g+YpFEqG+Ac+gA2lmKed3+Xq2P5Hd+jRMBcofnKSwnIYXthS48eRp93SXNeJALsytWiAW9CH2AsJzY8it2vVnErHlAhVKJZaQDlmLPvpbCkVd8SZ+ASmqnyNIAKzL3wEe2IdMp6GA9YLJtQlWakAUzgaNEX2pu+7O/GT2MfwCOElqXdQhbTOIcJ/nK1sQufMyDZVSWvSoQseVWdCrAeYAT7pty80E0Lc1lptYRVqeGap9FCQ+WVV9kDvsewaKYOYByNe55Nf8d+CvDgPx0NKv1zDupoFEM5QBGnd76hFQ8WTnw5obM9H6OpA+VT5GTP0CDbcQBM5tLsNg7gACxK2UuIn32rZWuLtsid6OEnr/ExkQyw4c6+bN2mliF/0smFm9UcoykWMU2dkhQKZ13HYLjCSXZTzwycWLE4KWQJNYyKS8YcqrmCyb1Rfzfw9q/tB5/W3M+9gcGwlTHJUZ4Y0MUcP/w0MsgcAm8xVKT+G0o5d+bjYAN83I1hXmpAPivoGPQQuzhISWpAJiNxUzfgr7SSBZSQxf/qrd+kdAqEuQK2cAAAAABJRU5ErkJggg==);
+    height: 32px;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 32px
+}
+
+.bue-render .node .header.icon-server-event:after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEjElEQVR4AcXXA3AsSxQG4Bfz2rZt27Zt27Zt28by2rbtu7GNnfT7T6onNbVva7Ks11VfNOh/uk93Zv9hjP2vbHYjNAdICyWhIVcFikBW8ARHuwRA84LyMBLOgELiECyBUdAF6kA+cDMaAM0VMkN+KAjZxZMN8acqCYNBkT59+stLliwJ/Pbtm3D37t2EAwcORE6aNOlP69at3+bPn/+mJNRCKPqfAGjuUAEmwk7YAzOgMoUwOK8gf6Ljzs7OqilTpuj8/PySmEwLCwtjt27dSnB3d9fgug7gbBigAKykxJScDBgw4Bv+Nhdy8tHJA21gOyjo+OfPnwVmQouJiWEDBw70z5Ahw3VcOwLcDYuoISju37+fyHhbvnx5EO+sEJSC+aBo0aLFmydPnuiZiU2v17PRo0cHYaSSMmbMeAf3GAte0gBuMNDb2/tSfHx8ypBlzpz5Cv4+mtfEmCpVqjzWarXxzMw2d+7cUHQuTJ8+nWXKlOmusQDZYXm7du3eMd5WrVpFT6/gNVAWLk6YMEE3bdo0v2XLlgUqlcpYnU4nO+/8PhETJ05M7lwuQBlQUKcMLTIykuXOnfsGH/Ic0ISO//79O6XDV69e6anS582bF0Ch6FoanYCAACa2gwcPxo4bN05PHacWoBEoqEoZ2tatW8P40x+AWtANFL9+/ZKd50ePHiX27dv3K4bbF3PuO378+ETqVDYAr+7+tDyoUsWnL1as2F2k/8NHYYRsAEnTaDSJ9H3Dhg2809QDZIXFVNkMjUbh7NmzMfREtBRxbD0MNDWASqUS6DvqxOQAJeHMokWLAgw3DloVfKdrCYq1a9cKmFdGMNxGA2hPnxbY5ctmBWgACsPltWnTplBeB5WgueEIfPz4kR05coRQoOTvX758YefOnROwR5gWAM0ZetJ2Sk/84cMH4fDhw5E0/FQDODYVMkK71KaA9g/8D0g6efKkngJR9ZsSwBU6lS1b9gHt5xRk7969EWq1Oo465KPjBG3EAKY2U0fACQrBMFAQGgX6f4Cf10BuPk1N+DZt2wD85k6QCxbRv03aYHiY9uAq3SdOo8DE+SbXrl2jZWtdAIKWBzYOHjz4O196h6CI5HhLY1NAux62ZIZlyy5cuEA/U3FaFKAYHKXtlC+9/uAlOd7O1Br4/v07bUZs6tSpgqlT4ABVQDFixIhf+H4aSoGDNICNi3AUeIg3d4aO2bNnv8aXXn9IQ8dsHYCWpqen5zXcqzu4SIuwuYeHxwl8nwMFwMnWAehlJE+ePPSGdRbKg4O0gxxQEfKInds6QLly5XS4xxVoKtaXYScOMq/eTawJ0LBhw0BcfxNaS6fXnHf/ErC7e/fuibT+//79a3KAjh07huPae9ALMkrva+6Hj5pwAf5CbIECBdjQoUPZ8ePHma+vr9EAeAuOdXFxeYrz50EecLQoAEFz5zepDh1hKdwHHcRhBdGbL21KyRvUrFmzBOwpb3DsIK8vF5t9NOMrJx0U4iPTGVbDE/CFeHT+kzY3qA3u9v5w6gzpoQjvsAP0hLJixds8gAmflp3kVhb5F3+yRKkpSI7UAAAAAElFTkSuQmCC);
+    height: 32px;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 32px
+}
