@@ -14,4 +14,4 @@ Unreal Blueprint Web simplifies the process of sharing and presenting Unreal Eng
 
 Explore the capabilities of Unreal Blueprint Web with our live demo. Witness the dynamic rendering of Unreal Engine blueprints in a web browser.
 
-[**Launch Demo**](/demo/)
+[**Launch Demo**]({{ 'demo/' | relative_url }})
