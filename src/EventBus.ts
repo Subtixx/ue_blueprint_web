@@ -1,41 +1,45 @@
-import {logger} from "./utils/Logger";
-import {CanvasEvent, CanvasEventCallback} from "./CanvasEvent";
+import { logger } from "./utils/Logger";
+import { CanvasEvent, CanvasEventCallback } from "./CanvasEvent";
 
 /**
  * A simple event bus.
  */
 export class EventBus {
-    private readonly data: { [key in CanvasEvent]?: CanvasEventCallback[] };
+    private readonly events: { [key in CanvasEvent]?: CanvasEventCallback[] };
     private isDebug: boolean = false;
 
     constructor() {
-        this.data = {};
+        this.events = {};
+    }
+
+    stop() {
     }
 
     listen(event: CanvasEvent, func: CanvasEventCallback) {
-        if (this.data[event] === undefined) {
-            this.data[event] = [];
+        if (this.events[event] === undefined) {
+            this.events[event] = [];
         }
 
         if (this.isDebug) {
             logger.d(`Listening for event ${event}`, "bus.ts");
         }
-        this.data[event]!.push(func);
+        this.events[event]!.push(func);
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     emit(event: CanvasEvent, args: any[] | null = null) {
-        if (this.data[event] === undefined || this.data[event]!.length === 0) {
+        if (this.events[event] === undefined || this.events[event]!.length === 0) {
             this.warnNoListeners(event);
             return false;
         }
 
-        for (let r = this.data[event]!.length, n = 0; n < r; ++n) {
-            if (this.data[event]![n] === undefined) {
+        for (let r = this.events[event]!.length, n = 0; n < r; ++n) {
+            if (this.events[event]![n] === undefined) {
                 logger.error(`Event ${event} has an undefined listener`);
                 continue;
             }
 
-            if (typeof this.data[event]![n] !== "function") {
+            if (typeof this.events[event]![n] !== "function") {
                 logger.error(`Event ${event} has a non-function listener`);
                 continue;
             }
@@ -43,7 +47,7 @@ export class EventBus {
             if (this.isDebug) {
                 logger.d(`Emitting event ${event}`, "bus.ts");
             }
-            if (!this.data[event]![n](args)) {
+            if (!this.events[event]![n](args)) {
                 return false;
             }
         }
