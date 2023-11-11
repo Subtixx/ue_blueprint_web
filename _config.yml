@@ -2,8 +2,8 @@ title: Unreal Blueprint Web
 email: d.hock@it-hock.de
 description: >-
   A typescript library to display Unreal Engine Blueprints on the web.
-baseurl: ""
-url: "subtixx.github.io/ue_blueprint_web"
+baseurl: "ue_blueprint_web/"
+url: "subtixx.github.io"
 github_username: subtixx
 
 # Build settings
