@@ -1,0 +1,89 @@
+:root {
+    --foreground: #f8f8f2;
+    --background: #282a36;
+    --darkerBackground: #21222c;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+
+    --primary: var(--purple);
+    --secondary: var(--pink);
+    --tertiary: var(--cyan);
+
+    --font: 'Fira Code', monospace;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.tertiary {
+    color: var(--tertiary);
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary);
+}
+
+a,
+h1 {
+    color: var(--primary);
+}
+
+a:hover {
+    color: #c8a3fc;
+}
+
+hr {
+    background-color: var(--primary);
+}
+
+section #title img {
+    max-width: none;
+    padding: 0;
+}
+
+.navbar {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+
+.navbar a.link {
+    padding: 10px;
+    color: var(--foreground);
+    background-color: var(--darkerBackground);
+    text-decoration: none;
+}
+
+.navbar a.link:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
