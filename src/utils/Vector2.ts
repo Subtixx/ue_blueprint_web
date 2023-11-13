@@ -2,8 +2,8 @@
  * A 2D vector class
  */
 export class Vector2 {
-    private readonly _x: number;
-    private readonly _y: number;
+    private _x: number;
+    private _y: number;
 
     /**
      * Creates a new vector
@@ -119,11 +119,25 @@ export class Vector2 {
     }
 
     /**
+     * Sets the x component of the vector
+     */
+    set x(value: number) {
+        this._x = value;
+    }
+
+    /**
      * Returns the y component of the vector
      * @returns {number}
      */
     get y(): number {
         return this._y;
+    }
+
+    /**
+     * Sets the y component of the vector
+     */
+    set y(value: number) {
+        this._y = value;
     }
 
     /**
