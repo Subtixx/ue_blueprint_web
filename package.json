@@ -14,7 +14,7 @@
         "type": "tsc --noEmit"
     },
     "devDependencies": {
-        "@types/jest": "^29.5.8",
+        "@types/jest": "^29.5.12",
         "@types/node": "^20.9.0",
         "@typescript-eslint/eslint-plugin": "^6.10.0",
         "css-loader": "^6.8.1",
